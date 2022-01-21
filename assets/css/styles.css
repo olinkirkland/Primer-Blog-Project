@@ -1,0 +1,228 @@
+/* GENERAL */
+
+html {
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  color: #343a40;
+  background-color: #f1f1f1;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.article-container {
+  padding-top: 2.4rem;
+}
+
+/* SOCIAL ICONS */
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #343a40;
+}
+
+/* PRIMARY NAV */
+.nav-primary {
+  padding: 1rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid#343a40;
+  align-items: center;
+}
+
+/* NAV (GENERAL) */
+.btn-nav {
+  font-size: 1.2rem;
+  color: #099268;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  border-bottom: 1px solid #099268;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+  border-bottom: 1px solid transparent;
+}
+
+.btn-nav--emphasis {
+  background-color: #099268;
+  border: 1px solid #099268;
+  color: #f1f1f1;
+  padding: 0.4rem 0.8rem;
+  border-bottom: none;
+}
+
+.btn-nav--emphasis:hover,
+.btn-nav--emphasis:active {
+  background-color: #f1f1f1;
+  border: 1px solid #099268;
+  color: #099268;
+}
+
+/* HEADER */
+header {
+  padding-bottom: 4rem;
+  margin-bottom: 6.4rem;
+  border-bottom: 1px dashed #343a40;
+}
+
+.logo {
+  font-size: 6.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo-subtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.banner {
+  font-size: 1rem;
+  padding: 1.2rem;
+  letter-spacing: 0.4px;
+  background-color: #099268;
+  color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  display: flex;
+}
+
+.banner a ion-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #f1f1f1;
+}
+
+/* SECONDARY NAV */
+.nav-secondary {
+  background-color: rgba(52, 58, 64, 0.05);
+  margin-right: 2.4rem;
+  padding-top: 3.2rem;
+  text-align: center;
+}
+
+.nav-secondary ul {
+  border: 1px solid #099268;
+  margin: 0 2rem;
+}
+
+.nav-secondary ul li {
+  margin: 0 1rem 2rem 0;
+  list-style: none;
+  white-space: nowrap;
+  margin: 3rem 1rem;
+}
+
+.nav-secondary h3 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #099268;
+  text-align: center;
+}
+
+.nav-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+
+.nav-icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  color: #099268;
+}
+
+.blog-entry {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+}
+
+.img-blog {
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 0px;
+}
+
+.blog-entry .blog-content {
+  grid-column: span 2;
+  padding: 1rem;
+}
+
+.blog-content h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.author {
+  font-size: 1.4rem;
+  display: block;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px dashed rgba(52, 58, 64, 0.4);
+}
+
+.blog-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.blog-content a {
+  color: #099268;
+  font-size: small;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
