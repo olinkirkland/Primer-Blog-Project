@@ -16,7 +16,12 @@ html {
 body {
   font-family: 'Merriweather', sans-serif;
   color: #343a40;
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
+}
+
+hr {
+  opacity: 0.2;
+  margin: 3.2rem 2.4rem;
 }
 
 ion-icon {
@@ -83,14 +88,14 @@ main {
 .btn-nav--emphasis {
   background-color: #099268;
   border: 1px solid #099268;
-  color: #f1f1f1;
+  color: #f8f8f8;
   padding: 0.4rem 0.8rem;
   border-bottom: none;
 }
 
 .btn-nav--emphasis:hover,
 .btn-nav--emphasis:active {
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
   border: 1px solid #099268;
   color: #099268;
 }
@@ -120,7 +125,7 @@ header {
   padding: 1.2rem;
   letter-spacing: 0.4px;
   background-color: #099268;
-  color: #f1f1f1;
+  color: #f8f8f8;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
@@ -130,14 +135,14 @@ header {
 .banner a ion-icon {
   width: 1.6rem;
   height: 1.6rem;
-  color: #f1f1f1;
+  color: #f8f8f8;
 }
 
 /* SECONDARY NAV */
 .nav-secondary {
   background-color: rgba(52, 58, 64, 0.05);
   margin-right: 2.4rem;
-  padding-top: 3.2rem;
+  padding: 3.2rem 0;
   text-align: center;
 }
 
@@ -149,11 +154,11 @@ header {
   margin: 0 1rem 2rem 0;
   list-style: none;
   white-space: nowrap;
-  margin: 3rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .nav-secondary h3 {
-  margin: 0.8rem 0 1.2rem;
+  margin: 0.8rem 0 1.6rem;
   text-transform: uppercase;
   color: #099268;
   text-align: center;
@@ -166,9 +171,8 @@ header {
 }
 
 .nav-icon {
-  display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   color: #099268;
 }
 
@@ -182,7 +186,24 @@ header {
   border-radius: 5px;
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 0px;
+  margin-bottom: 1.2rem;
 }
+
+.img-container {
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tag {
+}
+
+/* .tag::before {
+  content: '\f425';
+} */
 
 .blog-entry .blog-content {
   grid-column: span 2;
