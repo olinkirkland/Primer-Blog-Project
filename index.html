@@ -150,7 +150,7 @@
               </p>
             </div>
             <div class="blog-content">
-              <h3>Our Favorite Lakes</h3>
+              <h3>Lakes: Precious Waters</h3>
               <span class="author">by James Blake</span>
               <p>
                 Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur
@@ -194,7 +194,7 @@
               </p>
             </div>
             <div class="blog-content">
-              <h3>Natural Power All Around Us</h3>
+              <h3>Natural Power - It's All Around Us</h3>
               <span class="author">by Georgia Sun</span>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -256,34 +256,64 @@
       <section id="donate" class="section-donate">
         <form class="container donate-form">
           <h3>Donate to Woodland Stories</h3>
-          <p>Donate Quantity</p>
-          <label for="donate-quantity"
-            >How much would you like to donate?</label
-          >
-          <input
-            id="donate-quantity"
-            type="text"
-            placeholder="Your desired donation (e.g. $42.23)"
-          />
+          <div>
+            <p>How much would you like to donate?</p>
+            <input
+              id="donate-quantity"
+              type="text"
+              placeholder="Your desired donation (e.g. $42.23)"
+            />
+          </div>
 
-          <label for="donate-frequency"
-            >How often would you like to donate?</label
-          >
-          <input
-            id="donate-frequency-once"
-            name="donate-frequency"
-            type="checkbox"
-          />
-          <input
-            id="donate-frequency"
-            name="donate-frequency"
-            type="checkbox"
-          />
-          <input
-            id="donate-frequency"
-            name="donate-frequency"
-            type="checkbox"
-          />
+          <div>
+            <p>How often would you like to donate?</p>
+            <div class="radio-box">
+              <input
+                id="donate-frequency-once"
+                name="donate-frequency"
+                type="radio"
+              />
+              <label for="donate-frequency-once">Just one time</label>
+            </div>
+            <div class="radio-box">
+              <input
+                id="donate-frequency-monthly"
+                name="donate-frequency"
+                type="radio"
+              />
+              <label for="donate-frequency-monthly">Every month</label>
+            </div>
+            <div class="radio-box">
+              <input
+                id="donate-frequency-four-times-a-year"
+                name="donate-frequency"
+                type="radio"
+              />
+              <label for="donate-frequency-four-times-a-year"
+                >Four times a year</label
+              >
+            </div>
+            <div class="radio-box">
+              <input
+                id="donate-frequency-two-times-a-year"
+                name="donate-frequency"
+                type="radio"
+              />
+              <label for="donate-frequency-two-times-a-year"
+                >Two times a year</label
+              >
+            </div>
+            <div class="radio-box">
+              <input
+                id="donate-frequency-one-time-a-year"
+                name="donate-frequency"
+                type="radio"
+              />
+              <label for="donate-frequency-four-times-a-year"
+                >Once a year</label
+              >
+            </div>
+          </div>
 
           <input id="donate-submit" type="submit" />
         </form>
