@@ -56,12 +56,12 @@ main {
 
 /* PRIMARY NAV */
 .nav-primary {
-  padding: 1rem;
+  padding: 3.2rem;
   margin-bottom: 3.2rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  border: 1px solid#343a40;
+  border-bottom: 1px dashed#343a40;
   align-items: center;
 }
 
@@ -102,18 +102,22 @@ main {
 
 /* HEADER */
 header {
-  padding-bottom: 4rem;
-  margin-bottom: 6.4rem;
-  border-bottom: 1px dashed #343a40;
+  padding: 16rem 0;
+  /* margin-bottom: 6.4rem; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/hero-image.webp);
+  background-position-y: center;
 }
 
 .logo {
+  color: #f8f8f8;
   font-size: 6.4rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 .logo-subtitle {
+  color: #f8f8f8;
   font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
