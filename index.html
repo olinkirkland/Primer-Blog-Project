@@ -257,65 +257,81 @@
         <form class="container donate-form">
           <h3>Donate to Woodland Stories</h3>
           <div>
-            <p>How much would you like to donate?</p>
-            <input
-              id="donate-quantity"
-              type="text"
-              placeholder="Your desired donation (e.g. $42.23)"
-            />
+            <div class="input-text-box">
+              <h4>How much would you like to donate?</h4>
+              <div class="input-text-with-currency">
+                <span class="input-text-currency-symbol">$</span>
+                <input
+                  id="donate-quantity"
+                  class="input-text"
+                  type="number"
+                  placeholder="Your desired donation (e.g. $42.23)"
+                  value="10"
+                />
+              </div>
+            </div>
           </div>
 
           <div>
-            <p>How often would you like to donate?</p>
-            <div class="radio-box">
-              <input
-                id="donate-frequency-once"
-                name="donate-frequency"
-                type="radio"
-              />
-              <label for="donate-frequency-once">Just one time</label>
-            </div>
-            <div class="radio-box">
-              <input
-                id="donate-frequency-monthly"
-                name="donate-frequency"
-                type="radio"
-              />
-              <label for="donate-frequency-monthly">Every month</label>
-            </div>
-            <div class="radio-box">
-              <input
-                id="donate-frequency-four-times-a-year"
-                name="donate-frequency"
-                type="radio"
-              />
-              <label for="donate-frequency-four-times-a-year"
-                >Four times a year</label
-              >
-            </div>
-            <div class="radio-box">
-              <input
-                id="donate-frequency-two-times-a-year"
-                name="donate-frequency"
-                type="radio"
-              />
-              <label for="donate-frequency-two-times-a-year"
-                >Two times a year</label
-              >
-            </div>
-            <div class="radio-box">
-              <input
-                id="donate-frequency-one-time-a-year"
-                name="donate-frequency"
-                type="radio"
-              />
-              <label for="donate-frequency-four-times-a-year"
-                >Once a year</label
-              >
+            <h4>How often would you like to donate?</h4>
+            <div class="radio-box-container">
+              <div class="radio-box">
+                <input
+                  id="donate-frequency-once"
+                  name="donate-frequency"
+                  type="radio"
+                />
+                <label for="donate-frequency-once">Just one time</label>
+              </div>
+              <div class="radio-box">
+                <input
+                  id="donate-frequency-monthly"
+                  name="donate-frequency"
+                  type="radio"
+                />
+                <label for="donate-frequency-monthly">Every month</label>
+              </div>
+              <div class="radio-box">
+                <input
+                  id="donate-frequency-four-times-a-year"
+                  name="donate-frequency"
+                  type="radio"
+                />
+                <label for="donate-frequency-four-times-a-year"
+                  >Four times a year</label
+                >
+              </div>
+              <div class="radio-box">
+                <input
+                  id="donate-frequency-two-times-a-year"
+                  name="donate-frequency"
+                  type="radio"
+                />
+                <label for="donate-frequency-two-times-a-year"
+                  >Two times a year</label
+                >
+              </div>
+              <div class="radio-box">
+                <input
+                  id="donate-frequency-one-time-a-year"
+                  name="donate-frequency"
+                  type="radio"
+                />
+                <label for="donate-frequency-one-time-a-year"
+                  >Once a year</label
+                >
+              </div>
             </div>
           </div>
 
-          <input id="donate-submit" type="submit" />
+          <div class="donate-submit-container">
+            <input
+              class="donate-submit"
+              id="donate-submit"
+              type="submit"
+              value="Donate now"
+            />
+          </div>
         </form>
       </section>
     </main>
