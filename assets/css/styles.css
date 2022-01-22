@@ -33,9 +33,9 @@ main {
 }
 
 .container {
-  max-width: 96rem;
+  max-width: 112rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2.4rem;
 }
 
 .article-container {
@@ -56,12 +56,12 @@ main {
 
 /* PRIMARY NAV */
 .nav-primary {
-  padding: 3.2rem;
-  margin-bottom: 3.2rem;
+  /* padding: 1.2rem; */
+  margin: 3.2rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  border-bottom: 1px dashed#343a40;
+  /* border-bottom: 1px dashed#343a40; */
   align-items: center;
 }
 
@@ -106,7 +106,8 @@ header {
   /* margin-bottom: 6.4rem; */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/assets/img/hero-image.webp);
-  background-position-y: center;
+  background-position-y: bottom;
+  background-size: 100%;
 }
 
 .logo {
