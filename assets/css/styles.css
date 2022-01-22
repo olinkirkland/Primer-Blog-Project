@@ -205,12 +205,20 @@ header {
   gap: 1rem;
 }
 
-.tag {
+.tag-container a {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #099268;
 }
 
-/* .tag::before {
-  content: '\f425';
-} */
+.tag-container a::before {
+  content: url(/assets/svg-icons/tag.svg);
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+  fill: #099268;
+}
 
 .blog-entry .blog-content {
   grid-column: span 3;
