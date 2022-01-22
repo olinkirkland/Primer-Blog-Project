@@ -254,8 +254,15 @@
       </section>
 
       <section id="donate" class="section-donate">
-        <form class="container donate-form">
-          <h3>Donate to Woodland Stories</h3>
+        <form class="container donate-form" action="#">
+          <div class="donate-header">
+            <h3>Donate to Woodland Stories</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+              cupiditate inventore quia id rerum.
+            </p>
+          </div>
+
           <div>
             <div class="input-text-box">
               <h4>How much would you like to donate?</h4>
@@ -266,9 +273,23 @@
                   class="input-text"
                   type="number"
                   placeholder="Your desired donation (e.g. $42.23)"
-                  value="10"
+                  min="10"
+                  required
                 />
               </div>
+            </div>
+            <div class="check-box">
+              <input
+                id="receive-gift"
+                name="receive-gift"
+                type="checkbox"
+                checked
+                required
+              />
+              <label for="receive-gift"
+                >Yes, I would like to receive a complementary Woodland Stories
+                carabiner!</label
+              >
             </div>
           </div>
 
@@ -280,6 +301,8 @@
                   id="donate-frequency-once"
                   name="donate-frequency"
                   type="radio"
+                  required
+                  checked
                 />
                 <label for="donate-frequency-once">Just one time</label>
               </div>
@@ -288,6 +311,7 @@
                   id="donate-frequency-monthly"
                   name="donate-frequency"
                   type="radio"
+                  required
                 />
                 <label for="donate-frequency-monthly">Every month</label>
               </div>
@@ -296,6 +320,7 @@
                   id="donate-frequency-four-times-a-year"
                   name="donate-frequency"
                   type="radio"
+                  required
                 />
                 <label for="donate-frequency-four-times-a-year"
                   >Four times a year</label
@@ -306,6 +331,7 @@
                   id="donate-frequency-two-times-a-year"
                   name="donate-frequency"
                   type="radio"
+                  required
                 />
                 <label for="donate-frequency-two-times-a-year"
                   >Two times a year</label
@@ -316,6 +342,7 @@
                   id="donate-frequency-one-time-a-year"
                   name="donate-frequency"
                   type="radio"
+                  required
                 />
                 <label for="donate-frequency-one-time-a-year"
                   >Once a year</label
