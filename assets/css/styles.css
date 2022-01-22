@@ -28,7 +28,7 @@ ion-icon {
   pointer-events: none;
 }
 
-main {
+section {
   display: flex;
 }
 
@@ -292,14 +292,14 @@ header {
   background-color: rgba(52, 58, 64, 0.05);
 }
 
-.pagination a:link,
-.pagination a:visited {
-  border-bottom: 1px solid transparent;
+/* DONATION */
+.section-donate {
+  background-color: #099268;
 }
 
-.pagination a:hover,
-.pagination a:active {
-  border-bottom: 1px solid currentColor;
+.donate-form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* FOOTER */
