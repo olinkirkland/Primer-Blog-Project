@@ -271,6 +271,7 @@ header {
 .author {
   font-size: 1.4rem;
   display: block;
+  color: rgba(52, 58, 64, 0.6);
   padding-bottom: 0.6rem;
   margin-bottom: 1.2rem;
   border-bottom: 1px dashed rgba(52, 58, 64, 0.4);
@@ -366,6 +367,7 @@ header {
   font-family: inherit;
 }
 
+/* Hide the numeric steppers in the input-text field */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -377,7 +379,6 @@ input[type='number'] {
 }
 
 .check-box {
-  max-width: max-content;
   display: flex;
   gap: 2rem;
   background-color: rgba(248, 248, 248, 0.2);
