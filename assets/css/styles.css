@@ -185,12 +185,16 @@ header {
   justify-content: center;
 }
 
+.date-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-secondary ul li {
   margin: 0 1rem 2rem 0;
   list-style: none;
   white-space: nowrap;
   /* Todo: Fix this so the  content either cuts off or wraps*/
-  margin: 2rem 1rem;
   overflow: hidden;
 }
 
