@@ -19,12 +19,18 @@ body {
   background-color: #f8f8f8;
 }
 
-a {
+a,
+p {
   letter-spacing: 1.2px;
 }
 
 h3 {
   letter-spacing: 1px;
+}
+
+h4 {
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 hr {
@@ -40,30 +46,30 @@ section {
   display: flex;
 }
 
-main {
-  margin-bottom: 3.2rem;
-}
-
 .container {
-  max-width: 112rem;
+  width: 96rem;
   margin: 0 auto;
   padding: 2.4rem;
+}
+
+.grid {
+  display: grid;
 }
 
 .article-container {
   padding-top: 2.4rem;
 }
 
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #f8f8f8;
+}
+
 /* SOCIAL ICONS */
 .social-links {
   display: flex;
   gap: 0.5rem;
-}
-
-.social-icon {
-  width: 2rem;
-  height: 2rem;
-  color: #f8f8f8;
 }
 
 /* PRIMARY NAV */
@@ -122,7 +128,6 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  /* padding: 16rem 0; */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/assets/img/hero-image.webp);
   background-position-y: bottom;
@@ -312,7 +317,8 @@ header {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 3.2rem;
-  margin: 1.6rem;
+  max-width: 96rem;
+  margin: 2.4rem;
   border: 1px dashed #f8f8f8;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 0px;
 }
@@ -408,6 +414,8 @@ input[type='number'] {
   padding: 0.8rem 1.6rem;
   background-color: #f8f8f8;
   color: #099268;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .section-donate *:focus {
@@ -419,6 +427,7 @@ input[type='number'] {
 .donate-submit:active {
   background-color: transparent;
   color: #f8f8f8;
+  border: 1px solid #f8f8f8;
 }
 
 .radio-box-container {
@@ -467,8 +476,106 @@ input[type='number'] {
 }
 
 /* FOOTER */
-footer {
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  padding: 12rem 4rem;
+  color: rgb(52, 58, 64, 0.8);
+  font-size: 1.2rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  line-height: 1.8;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgb(52, 58, 64, 0.2);
+  color: #343a40;
+}
+
+footer .icon {
+  color: rgb(52, 58, 64, 0.6);
+}
+
+.icon-with-text {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.icon-with-text--bullet {
+  gap: 0.2rem;
+}
+
+.icon-with-text--bullet .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.icon-with-text .icon {
+  flex: 0 0 2em;
+}
+
+.icon-with-text a {
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+
+.icon-with-text a:link,
+.icon-with-text a:visited {
+  color: #343a40;
+}
+
+.grid--latest-articles {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.grid--latest-articles a {
+  aspect-ratio: 1;
+}
+
+.footer-column img {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column a:link,
+.footer-column a:visited {
+  line-height: 0;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.footer-column a:hover,
+.footer-column a:active {
+  opacity: 1;
+}
+
+.footer-stripe {
+  grid-column: 1/-1;
+  color: #f8f8f8;
+  background-color: rgba(52, 58, 64, 0.6);
+  padding: 4rem;
+}
+
+.footer-stripe .container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+}
+
+.footer-stripe-menu {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer-stripe-menu a {
+  color: #f8f8f8;
 }
