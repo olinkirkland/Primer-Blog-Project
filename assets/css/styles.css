@@ -191,6 +191,10 @@ header {
   margin: 2rem 1rem;
 }
 
+.nav-secondary ul li a {
+  font-size: 0.8rem;
+}
+
 .nav-secondary h3 {
   margin: 0.8rem 0 1.6rem;
   text-transform: uppercase;
@@ -322,7 +326,6 @@ header {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 3.2rem;
-  max-width: 96rem;
   margin: 2.4rem;
   border: 1px dashed #f8f8f8;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 0px;
@@ -363,7 +366,7 @@ header {
   border-radius: 0;
   border: none;
   width: 100%;
-  min-width: 32rem;
+  min-width: 28rem;
   color: #343a40;
   font-size: 1.2rem;
   font-family: inherit;
@@ -455,6 +458,7 @@ input[type='number'] {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 2.4rem;
 }
 
 .section-partners h2 {
