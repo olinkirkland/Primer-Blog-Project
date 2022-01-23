@@ -426,6 +426,11 @@ input[type='number'] {
   border: 1px solid transparent;
 }
 
+/* Workaround for submit button roundness on iOS */
+input[type='submit'] {
+  -webkit-appearance: none;
+}
+
 .section-donate *:focus {
   outline: none;
   box-shadow: 0 0 0 0.4rem rgba(248, 248, 248, 0.2);
