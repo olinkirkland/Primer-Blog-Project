@@ -10,7 +10,6 @@ instead, 1rem = 1em = 16px */
 
 /* 1200px / 16px = 75 */
 @media (max-width: 75em) {
-  
 }
 
 /**************************************/
@@ -19,7 +18,57 @@ instead, 1rem = 1em = 16px */
 
 /* 992px / 16px = 62 */
 @media (max-width: 62em) {
-  
+  /* HEADER */
+  .logo-container {
+    margin: 6.4rem 0;
+  }
+
+  .logo {
+    font-size: 4.8rem;
+  }
+
+  .logo-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* MAIN */
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-secondary {
+    margin-right: 0;
+    order: 1;
+  }
+
+  .nav-secondary ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-secondary ul li {
+    margin: 0.8rem;
+  }
+
+  /* DONATE */
+  .radio-box-container {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-stripe .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
 }
 
 /**************************************/
@@ -28,12 +77,5 @@ instead, 1rem = 1em = 16px */
 
 /* 768px / 16px = 48 */
 @media (max-width: 48em) {
-}
 
-/**************************************/
-/* XS -- BELOW 576 */
-/**************************************/
-
-/* 576px / 16px = 36 */
-@media (max-width: 36em) {
 }
