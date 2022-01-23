@@ -67,8 +67,21 @@ instead, 1rem = 1em = 16px */
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 2rem;
     flex-direction: column-reverse;
+  }
+
+  .footer-stripe-menu {
+    gap: 2rem;
+  }
+
+  .footer-stripe-menu p {
+    display: none;
+  }
+
+  .footer-stripe p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
 }
 
@@ -132,6 +145,12 @@ instead, 1rem = 1em = 16px */
 
   .blog-entry p {
     display: none;
+  }
+
+  .nav-secondary ul {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
   }
 
   .pagination {

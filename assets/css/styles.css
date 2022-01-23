@@ -182,17 +182,21 @@ header {
 
 .nav-secondary ul {
   margin: 0 3.2rem;
+  justify-content: center;
 }
 
 .nav-secondary ul li {
   margin: 0 1rem 2rem 0;
   list-style: none;
   white-space: nowrap;
+  /* Todo: Fix this so the  content either cuts off or wraps*/
   margin: 2rem 1rem;
+  overflow: hidden;
 }
 
 .nav-secondary ul li a {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  /* text-overflow: ellipsis; */
 }
 
 .nav-secondary h3 {
