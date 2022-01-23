@@ -56,10 +56,6 @@ section {
   display: grid;
 }
 
-.article-container {
-  padding-top: 2.4rem;
-}
-
 .icon {
   width: 2rem;
   height: 2rem;
@@ -131,7 +127,8 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/hero.jpg);
   background-position-y: bottom;
-  background-size: 100%;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .logo-container {
@@ -167,7 +164,7 @@ header {
   display: flex;
 }
 
-.banner a ion-icon {
+.banner .icon {
   width: 1.6rem;
   height: 1.6rem;
   color: #f8f8f8;
@@ -211,10 +208,15 @@ header {
   color: #099268;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 .blog-entry {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  row-gap: 5rem;
   column-gap: 1rem;
 }
 
@@ -255,7 +257,7 @@ header {
   fill: #099268;
 }
 
-.blog-entry .blog-content {
+.blog-content {
   grid-column: span 3;
   padding: 1rem;
 }
