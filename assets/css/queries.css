@@ -79,10 +79,6 @@ instead, 1rem = 1em = 16px */
 /* 768px / 16px = 48 */
 @media (max-width: 48em) {
   /* HEADER */
-  .logo-container {
-    margin: 2.4rem 0;
-  }
-
   .logo {
     font-size: 4.8rem;
     letter-spacing: 1.2px;
@@ -100,17 +96,15 @@ instead, 1rem = 1em = 16px */
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    padding: 2.4rem 1.2rem;
+    line-height: 1.6;
   }
 
   .banner .icon {
-    width: 2.4rem;
-    height: 2.4rem;
-    margin-bottom: 0.4rem;
+    display: none;
   }
 
   .banner p {
-    order: 1;
+    padding: 0 1.8rem;
     text-align: center;
   }
 
