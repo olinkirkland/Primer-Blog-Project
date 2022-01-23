@@ -129,7 +129,7 @@ header {
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/img/hero.png);
+    url(../img/hero.png);
   background-position-y: bottom;
   background-size: 100%;
 }
@@ -248,7 +248,7 @@ header {
 }
 
 .tag-container a::before {
-  content: url(assets/svg-icons/tag.svg);
+  content: url(../svg-icons/tag.svg);
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 0.4rem;
